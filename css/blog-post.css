@@ -1,0 +1,94 @@
+@import "common.css";
+@import "header.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas: "hd hd hd hd hd hd hd hd" "main main main main main main main main" "ft ft ft ft ft ft ft ft";
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    grid-area: hd;
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+}
+
+div.scrollmenu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+.content {
+    grid-area: main;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr;
+}
+
+article>* {
+    grid-column: 4;
+}
+
+article>figure {
+    grid-column: 1 / -1;
+    margin: 20px 0;
+}
+
+article>.aside {
+    grid-column: 5 / -1;
+}
+
+article>img {
+    width: 75%;
+}
+
+article>blockquote {
+    grid-column: 3 / span 2;
+    margin: 0px 0;
+    color: #666;
+    border-left: 3px solid black;
+    padding-left: 10px;
+}
+
+.footer {
+    background: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    grid-area: ft;
+}

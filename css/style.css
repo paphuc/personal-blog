@@ -1,0 +1,78 @@
+@import "common.css";
+@import "header.css";
+@import "social-media.css";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas: "hd hd hd hd hd hd" "main main main main main main";
+    width: 100vw;
+    height: 100vh;
+}
+
+div.scrollmenu {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.image {
+    background-color: #aaa;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    grid-area: main;
+    background: white;
+}
+
+.footer {
+    background: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+}
