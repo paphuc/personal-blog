@@ -24,7 +24,7 @@
     font-size: 30px;
 }
 
-div.scrollmenu {
+div.menubar {
     display: flex;
     justify-content: center;
     background-color: #333;
@@ -32,7 +32,7 @@ div.scrollmenu {
     white-space: nowrap;
 }
 
-div.scrollmenu a {
+div.menubar a {
     display: inline-block;
     color: white;
     text-align: center;
@@ -40,7 +40,7 @@ div.scrollmenu a {
     text-decoration: none;
 }
 
-div.scrollmenu a:hover {
+div.menubar a:hover {
     background-color: #777;
 }
 
@@ -64,7 +64,7 @@ article>* {
 }
 
 article>figure {
-    grid-column: 1 / -1;
+    grid-column: 4 / -1;
     margin: 20px 0;
 }
 
@@ -72,8 +72,8 @@ article>.aside {
     grid-column: 5 / -1;
 }
 
-article>img {
-    width: 75%;
+article>figure>img {
+    width: 50%;
 }
 
 article>blockquote {
@@ -91,4 +91,15 @@ article>blockquote {
     margin-top: 20px;
     color: black;
     grid-area: ft;
+}
+
+.button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }

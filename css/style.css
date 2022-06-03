@@ -16,7 +16,7 @@
     height: 100vh;
 }
 
-div.scrollmenu {
+div.menubar {
     display: flex;
     justify-content: center;
     background-color: #333;
@@ -24,7 +24,7 @@ div.scrollmenu {
     white-space: nowrap;
 }
 
-div.scrollmenu a {
+div.menubar a {
     display: inline-block;
     color: white;
     text-align: center;
@@ -32,7 +32,7 @@ div.scrollmenu a {
     text-decoration: none;
 }
 
-div.scrollmenu a:hover {
+div.menubar a:hover {
     background-color: #777;
 }
 
@@ -75,4 +75,8 @@ div.scrollmenu a:hover {
     text-align: center;
     margin-top: 20px;
     color: black;
+}
+
+.blog-img {
+    height: 200px;
 }
