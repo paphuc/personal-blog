@@ -41,6 +41,12 @@ div.menubar a:hover {
     width: 75%;
 }
 
+@media only screen and (max-width: 400px) {
+    .leftcolumn {
+        width: 100%;
+    }
+}
+
 .rightcolumn {
     float: left;
     width: 25%;
